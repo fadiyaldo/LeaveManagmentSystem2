@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeaveManagmentSystem2.web.Data
 {
@@ -9,6 +10,7 @@ namespace LeaveManagmentSystem2.web.Data
         [Column(TypeName = "nvarchar(150)")]
         public string Name { get; set; }
 
+        [Display(Name = "Number of Days")]
         public int NumberOfDays { get; set; }
     }
 }
